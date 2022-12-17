@@ -18,12 +18,12 @@ for i in range(100):
 
 
 left_column, right_column = st.columns(2)
-button = left_column.button('Momo')
+button = left_column.button('Memo')
 if button:
-    right_column.write('やっとここまで')
+    right_column.write('やっとここまできた')
 
 expander = st.expander('問い合わせ')
-expander.write('どこまで進んでるんだい？')
+expander.write('どこまで進んでる？')
 
 
 
