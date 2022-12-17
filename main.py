@@ -9,22 +9,20 @@ st.write('streamlit 超入門 write')
 latest_iteration = st.empty()
 bar = st.progress(0)
 
-if st.checkbox('Interation'):
-    'Start！'
+if st.checkbox('読み込みますか？'):
+    '読み込み中・・・'
     for i in range(100):
         latest_iteration.text(f'Interation{i+1}')
         bar.progress(i+1)
         time.sleep(0.05)
     '完了!!!'
+    left_column, right_column = st.columns(2)
+    button = left_column.button('Memo')
+    if button:
+        right_column.write('やっとここまできた')
 
-
-left_column, right_column = st.columns(2)
-button = left_column.button('Memo')
-if button:
-    right_column.write('やっとここまできた')
-
-expander = st.expander('問い合わせ')
-expander.write('どこまで進んでる？')
+    expander = st.expander('問い合わせ')
+    expander.write('どこまで進んでる？')
 
 #if st.checkbox('Show Image'):
 #    img = Image.open('sample2.jpg')
