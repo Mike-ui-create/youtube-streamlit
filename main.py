@@ -3,18 +3,19 @@ import time
 
 st.title('Streamlit 超入門')
 
-st.write('')
-'読み込み開始！'
+st.write('streamlit 超入門 write')
+
 
 latest_iteration = st.empty()
 bar = st.progress(0)
 
-for i in range(100):
-    latest_iteration.text(f'Interation{i+1}')
-    bar.progress(i+1)
-    time.sleep(0.05)
-
-'完了!!!'
+if st.checkbox('Interation'):
+    'Start！'
+    for i in range(100):
+        latest_iteration.text(f'Interation{i+1}')
+        bar.progress(i+1)
+        time.sleep(0.05)
+        '完了!!!'
 
 
 left_column, right_column = st.columns(2)
