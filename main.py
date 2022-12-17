@@ -18,9 +18,9 @@ for i in range(100):
 
 
 left_column, right_column = st.columns(2)
-button = left_column.button('右カラムに文字を表示')
+button = left_column.button('Momo')
 if button:
-    right_column.write('ここは右カラム')
+    right_column.write('やっとここまで')
 
 expander = st.expander('問い合わせ')
 expander.write('どこまで進んでるんだい？')
