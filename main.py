@@ -19,7 +19,7 @@ if st.checkbox('読み込みますか？'):
     left_column, right_column = st.columns(2)
     button = left_column.button('Memo')
     if button:
-        right_column.write('やっとここまできた')
+        right_column.write('やっとここまできたが、全然理解してない。。。')
 
     expander = st.expander('問い合わせ')
     expander.write('どこまで進んでる？')
