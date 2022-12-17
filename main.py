@@ -25,9 +25,9 @@ if button:
 expander = st.expander('問い合わせ')
 expander.write('どこまで進んでる？')
 
-if st.checkbox('Show Image'):
-    img = Image.open('sample2.jpg')
-    st.image(img, caption='犬', use_column_width=True)    
+#if st.checkbox('Show Image'):
+#    img = Image.open('sample2.jpg')
+#    st.image(img, caption='犬', use_column_width=True)    
 
 #text = st.text_input('あなたの趣味を教えてください。')
 #'あなたの趣味:' , text
